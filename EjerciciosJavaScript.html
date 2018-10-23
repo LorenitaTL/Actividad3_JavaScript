@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <script type="text/javascript" src="funciones.js">
+  </script>
+</head>
+<body>
+<fieldset>
+
+
+  <form name="funciones_js" action="" method="post">
+    <h1>CURP</h1>
+    <label>Nombre: </label><input type="text" onkeyup="this.value=this.value.toUpperCase();" name="caja_nombre" id="c_nombre">
+    <br>
+    <label>Primer apellido: </label><input type="text" onkeyup="this.value=this.value.toUpperCase();" name="caja_p_apellido" id="pap" value="">
+    <br>
+    <label>Segundo apellido: </label><input type="text" onkeyup="this.value=this.value.toUpperCase();" name="caja_s_apellido" id="sap" value="">
+    <br>
+    <label>Fecha nacimiento:</label><input type="date" name="f_nacimiento" id="f_nac" step="1" min="1930-01-01" max="2050-12-31" value="">
+    <br>
+    <label>Sexo:</label>
+    <select name="sexo" id="sex">
+      <option>Femenino</option>
+      <option>Masculino</option>
+    </select>
+    <br>
+    <label>Estado: </label>
+    <select name="estado" id="estados">
+      <option value="AS">Aguascalientes</option>
+      <option value="BC">BC</option>
+      <option value="BS">BCS</option>
+      <option value="CC">Campeche</option>
+      <option value="CS">Chiapas</option>
+      <option value="CH">Chihuahua</option>
+      <option value="CL">Coahuila</option>
+      <option value="CM">Colima</option>
+      <option value="DF">CDMX</option>
+      <option value="DG">Durango</option>
+      <option value="MC">EdoMex</option>
+      <option value="GT">Guanajuato</option>
+      <option value="GR">Guerreo</option>
+      <option value="HG">Hidalgo</option>
+      <option value="JC">Jalisco</option>
+      <option value="MN">Michoaán</option>
+      <option value="MS">Morelos</option>
+      <option value="NT">Nayarit</option>
+      <option value="NL">Nuevo León</option>
+      <option value="OC">Oaxaca</option>
+      <option value="PL">Puebla</option>
+      <option value="QT">Querétaro</option>
+      <option value="QR">Quintana Roo</option>
+      <option value="SP">San Luis Potosí</option>
+      <option value="SL">Sinaloa</option>
+      <option value="SR">Sonora</option>
+      <option value="TC">Tabasco</option>
+      <option value="TS">Tamaulipas</option>
+      <option value="TL">Tlaxcala</option>
+      <option value="VZ">Veracruz</option>
+      <option value="YN">Yucatán</option>
+      <option value="ZS">Zacatecas</option>
+      <option value="NE">Nacido en el extranjero</option>
+    </select>
+    <br>
+  </form>
+
+<button onclick="curp();">CURP</button>
+</fieldset>
+<hr>
+<fieldset>
+  <div >
+  <form name="conversiones" action="" method="post">
+
+      <h1>CONVERSIONES</h1>
+      <label>Ingresa el número a convertir: </label><input type="text" id="decimal" name="caja_decimal" value="">
+      <br>
+      <button type="button" onclick="convertir();" name="button">CONVERTIR</button>
+
+  </form>
+  </div>
+</fieldset>
+<hr>
+<fieldset>
+  <div >
+    <form name="cadenas" action="" method="post">
+
+    <h1>CADENAS</h1>
+    <label>Ingresa la cadena a analizar: </label><input type="text" id="caja_cadena" name="caja_cadena" value="">
+    <br>
+    <label>Ingresa la letra que deseas buscar en la cadena: </label><input type="text" id="letra" name="letra" value="">
+    <br>
+    <button type="button" onclick="analizar();" name="button">Analizar</button>
+    <br>
+  </form>
+  </div>
+</fieldset>
+
+</body>
+</html>
